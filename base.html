@@ -19,20 +19,23 @@
         
               <p>Cantidad:
                 <span class="cantidad"></span>
+
                 <button id="sumar"
                 onclick="
-                cantidad = cantidad + 1;
-                cantidadSpan.innerHTML = cantidad;
-                total = precio * cantidad;
-                totalSpan.innerHTML = total;
+                    cantidad = cantidad + 1;
+                    cantidadSpan.innerHTML = cantidad;
+                    total = precio * cantidad;
+                    totalSpan.innerHTML = total;
                 ">+</button>
+
                 <button id="restar"
                 onclick="
-                cantidad = cantidad - 1;
-                cantidadSpan.innerHTML = cantidad;
-                total = precio * cantidad;
-                totalSpan.innerHTML = total;
-                ">-</button>
+                if(cantidad > 0){
+                    cantidad = cantidad - 1 
+                    cantidadSpan.innerHTML = cantidad;
+                    total = precio * cantidad;
+                    totalSpan.innerHTML = total;
+                }">-</button>
               </p>
             </div>
 
