@@ -22,19 +22,15 @@
 
                 <button id="sumar"
                 onclick="
-                    cantidad = cantidad + 1;
-                    cantidadSpan.innerHTML = cantidad;
-                    total = precio * cantidad;
-                    totalSpan.innerHTML = total;
+                    cantidad++;
+                    calcular();
                 ">+</button>
 
                 <button id="restar"
                 onclick="
                 if(cantidad > 0){
-                    cantidad = cantidad - 1 
-                    cantidadSpan.innerHTML = cantidad;
-                    total = precio * cantidad;
-                    totalSpan.innerHTML = total;
+                    cantidad--; 
+                    calcular();
                 }">-</button>
               </p>
             </div>

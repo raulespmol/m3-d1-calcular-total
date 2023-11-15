@@ -9,3 +9,8 @@ cantidadSpan.innerHTML = cantidad;
 
 
 const totalSpan = document.querySelector('.valor-total');
+
+function calcular(){
+  cantidadSpan.innerHTML = cantidad;
+  totalSpan.innerHTML = precio * cantidad;
+}
